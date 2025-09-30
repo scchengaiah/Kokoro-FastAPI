@@ -9,7 +9,7 @@ services:
       - ../../api:/app/api
     user: "1001:1001"  # Ensure container runs as UID 1001 (appuser)
     ports:
-      - "8880:8880"
+      - "38880:8880"
     environment:
       - PYTHONPATH=/app:/app/api
       - USE_GPU=true
